@@ -1,0 +1,46 @@
+TASK com.secomid.fota id=28
+  ACTIVITY com.secomid.fota/com.secomid.fotathird.fota.FotaActivity 4470303 pid=5016
+    Local Activity 37fc129b State:
+      mResumed=false mStopped=true mFinished=false
+      mLoadersStarted=false
+      mChangingConfigurations=false
+      mCurrentConfig={1.0 ?mcc?mnc es_US ?layoutDir sw360dp w360dp h567dp 320dpi nrml port finger -keyb/v/h -nav/h s.5}
+    FragmentManager misc state:
+      mActivity=com.secomid.fotathird.fota.FotaActivity@37fc129b
+      mContainer=android.app.Activity$1@22e15638
+      mCurState=3 mStateSaved=true mDestroyed=false
+    ViewRoot:
+      mAdded=true mRemoved=false
+      mConsumeBatchedInputScheduled=false
+      mConsumeBatchedInputImmediatelyScheduled=false
+      mPendingInputEventCount=0
+      mProcessInputEventsScheduled=false
+      mTraversalScheduled=false
+      android.view.ViewRootImpl$NativePreImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$ImeInputStage: mQueueLength=0
+      android.view.ViewRootImpl$NativePostImeInputStage: mQueueLength=0
+    Choreographer:
+      mFrameScheduled=false
+      mLastFrameTime=1286721 (19070 ms ago)
+    View Hierarchy:
+      com.android.internal.policy.impl.PhoneWindow$DecorView{37df3660 I.E..... R....... 0,0-720,1184}
+        android.widget.LinearLayout{e71588c V.E..... ........ 0,0-720,1184}
+          android.view.ViewStub{37858bd5 G.E..... ......I. 0,0-0,0 #1020373}
+          android.widget.FrameLayout{10359fea V.E..... ........ 0,50-720,1184 #1020002 android:id/content}
+            android.widget.RelativeLayout{fc5d0b6 V.E..... ........ 0,0-720,1134 #7f0b0044 app:id/iot_container}
+              android.widget.TextView{1f9581b7 V.ED...L ........ 202,56-517,113 #7f0b0045 app:id/iot_main_title}
+              com.secomid.fotathird.fota.view.CenterCircleView{3c04608d V.E...C. ........ 160,213-560,613 #7f0b0046 app:id/view_center_circle}
+                android.widget.RelativeLayout{6f68253 V.E..... ........ 0,0-400,400}
+                  com.secomid.fotathird.fota.view.CommonCircleView{31dcf790 V.ED.... ........ 0,0-400,400 #7f0b004d app:id/view_circle}
+                  android.widget.ImageView{17e37889 V.ED.... ........ 135,142-265,258 #7f0b004e app:id/image_arrow}
+                  android.widget.TextView{f5cf0af G.ED.... ......ID 0,0-0,0 #7f0b004f app:id/tv_progress}
+                  android.widget.TextView{3241fcbc V.ED.... ........ 65,278-334,314 #7f0b0050 app:id/tv_update_state_detail}
+              android.widget.TextView{9edd79a V.ED.... ........ 360,633-360,666 #7f0b0047 app:id/iot_error_tips}
+              android.widget.TextView{d11e8cb V.ED.... ........ 227,766-493,807 #7f0b0048 app:id/iot_version_detail}
+              android.widget.Button{1d9028a8 GFED..C. ......I. 0,0-0,0 #7f0b0049 app:id/button_control}
+              android.widget.LinearLayout{9bb5b4a V.E..... ........ 100,817-620,850 #7f0b004a app:id/iot_ll_release_note}
+                android.widget.ScrollView{1fd29abb VFED.V.. ........ 0,0-520,33}
+                  android.widget.TextView{1f730bd8 V.ED.... ........ 0,0-520,33 #7f0b004b app:id/iot_release_note_content}
+              android.widget.Button{32a80b31 GFED..C. ......I. 0,0-0,0 #7f0b004c app:id/btn_transfer_file}
+    Looper (main, tid 1) {2986f611}
+      (Total messages: 0, idling=false, quitting=false)

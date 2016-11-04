@@ -1,0 +1,89 @@
+Applications Graphics Acceleration Info:
+Uptime: 1387482 Realtime: 1632112
+
+** Graphics info for pid 5016 [com.secomid.fota] **
+
+Recent DisplayList operations
+          DrawText
+          DrawText
+          RestoreToCount
+        DrawRenderNode
+          DrawRenderNode
+            DrawRenderNode
+    RestoreToCount
+RestoreToCount
+Save
+DrawRenderNode
+  DrawRenderNode
+    DrawRect
+  DrawRenderNode
+    Save
+    ClipRect
+    DrawRenderNode
+      DrawRenderNode
+        DrawRenderNode
+          DrawRect
+        DrawRenderNode
+          Save
+          ClipRect
+          DrawText
+          RestoreToCount
+        DrawRenderNode
+          DrawRenderNode
+            DrawRenderNode
+              DrawCircle
+              DrawOval
+            DrawRenderNode
+              Save
+              DrawBitmap
+              RestoreToCount
+            DrawRenderNode
+              Save
+              ClipRect
+              DrawText
+              RestoreToCount
+        DrawRenderNode
+          Save
+          ClipRect
+          DrawText
+          DrawText
+          DrawText
+          RestoreToCount
+        DrawRenderNode
+          DrawRenderNode
+            DrawRenderNode
+    RestoreToCount
+RestoreToCount
+
+Caches:
+Current memory usage / total memory usage (bytes):
+  TextureCache            60320 / 25165824
+  LayerCache                  0 / 16777216 (numLayers = 0)
+  Layers total          0 (numLayers = 0)
+  RenderBufferCache           0 /  2097152
+  GradientCache               0 /   524288
+  PathCache                   0 / 10485760
+  TessellationCache           0 /  1048576
+  TextDropShadowCache         0 /  2097152
+  PatchCache                  0 /   131072
+  FontRenderer 0 A8      524288 /   524288
+  FontRenderer 0 RGBA         0 /        0
+  FontRenderer 0 total   524288 /   524288
+Other:
+  FboCache                    0 /       16
+Total memory usage:
+  584608 bytes, 0.56 MB
+
+Profile data in ms:
+
+	com.secomid.fota/com.secomid.fotathird.fota.FotaActivity/android.view.ViewRootImpl@2ddba8ab (visibility=0)
+View hierarchy:
+
+  com.secomid.fota/com.secomid.fotathird.fota.FotaActivity/android.view.ViewRootImpl@2ddba8ab
+  19 views, 25.00 kB of display lists
+
+
+Total ViewRootImpl: 1
+Total Views:        19
+Total DisplayList:  25.00 kB
+

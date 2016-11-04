@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.secomid.fotathird"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- required -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher2.MiuiliteLauncherProvider"/>
+    <uses-permission android:name="com.shyz.desktop.LauncherProvider"/>
+    <uses-permission android:name="com.android.launcher2.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- optional:若使用蓝牙功能，则添加 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <application
+        android:name="com.secomid.fotathird.FotaApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.secomid.fotathird.fota.FotaActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+       <!-- <activity android:name=".bt.BtServerActivity">
+        </activity>-->
+        <!-- required：sdk相关server和receiver start -->
+        <!-- <service android:name="com.msg.analytics.AnalyticsService"/> -->
+        <service android:name="com.fota.iport.service.DLService"/>
+
+        <receiver android:name="com.fota.iport.receiver.UpgradeReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.msg.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"></action>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"></action>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"></action>
+
+
+                <data android:scheme="package"></data>
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="PID"
+            android:value="sdk"/>
+        <!-- required：sdk相关server和receiver end -->
+
+
+        <!-- optional：周期检测版本 开机时，升级版本提示 demo部分代码   start -->
+        <service android:name="com.secomid.fotathird.fota.FotaIntentService"/>
+
+        <receiver
+            android:name="com.secomid.fotathird.FotaReceiver"
+            android:excludeFromRecents="true"
+            android:label="OtaReceiver">
+            <intent-filter android:priority="2">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="action.iport.recovery.upgrade"/>
+            </intent-filter>
+        </receiver>
+        <!-- optional：周期检测版本 开机时，升级版本提示 demo部分代码   end -->
+        <service
+            android:name="com.secomid.fotathird.update.UpdateService"
+            android:exported="false">
+        </service>
+
+        <activity
+            android:name="com.secomid.fotathird.update.NoticeSelfActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/translucent">
+        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

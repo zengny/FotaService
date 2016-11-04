@@ -1,0 +1,21 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.2'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+
+}
+ext {
+    iportExportPath = "C:/Users/y2222/Desktop/广升sdk项目/project"
+    analyticsLibPath = "E:/analytics_tm_lib/libs"
+}
+allprojects {
+    repositories {
+        jcenter()
+    }
+}

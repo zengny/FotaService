@@ -1,0 +1,37 @@
+Applications Memory Usage (kB):
+Uptime: 1369490 Realtime: 1614119
+
+** MEMINFO in pid 5016 [com.secomid.fota] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap        0        0        0        0    16384     9078     7305
+  Dalvik Heap     1436     1328        0     5760    10307     8330     1977
+ Dalvik Other      276      276        0        0                           
+        Stack      236      236        0        0                           
+       Ashmem        6        0        0        0                           
+    Other dev        6        0        4        0                           
+     .so mmap     1006      132      168     2812                           
+    .apk mmap      146        0       56        0                           
+    .ttf mmap        3        0        0        0                           
+    .dex mmap      784        0      780        0                           
+    .oat mmap     1546        0      520        0                           
+    .art mmap     1199      836       32      116                           
+   Other mmap      212        4      192        0                           
+   EGL mtrack     5585     5585        0        0                           
+    GL mtrack     5908     5908        0        0                           
+      Unknown     5766     5704        0     1528                           
+        TOTAL    24115    20009     1752    10216    26691    17408     9282
+ 
+ Objects
+               Views:       19         ViewRootImpl:        1
+         AppContexts:        3           Activities:        1
+              Assets:        3        AssetManagers:        3
+       Local Binders:        7        Proxy Binders:       15
+       Parcel memory:        2         Parcel count:       10
+    Death Recipients:        0      OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0
+ 

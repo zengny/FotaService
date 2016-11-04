@@ -1,0 +1,63 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        3ada32a2 com.secomid.fota/com.secomid.fotathird.fota.FotaActivity
+
+Receiver Resolver Table:
+  Schemes:
+      package:
+        15a11b33 com.secomid.fota/com.msg.analytics.AnalyticsReceiver
+
+  Non-Data Actions:
+      android.net.conn.CONNECTIVITY_CHANGE:
+        8544ef0 com.secomid.fota/com.fota.iport.receiver.UpgradeReceiver
+        15a11b33 com.secomid.fota/com.msg.analytics.AnalyticsReceiver
+        3992ec69 com.secomid.fota/com.secomid.fotathird.FotaReceiver
+      action.iport.recovery.upgrade:
+        3992ec69 com.secomid.fota/com.secomid.fotathird.FotaReceiver
+      android.intent.action.BOOT_COMPLETED:
+        8544ef0 com.secomid.fota/com.fota.iport.receiver.UpgradeReceiver
+      android.intent.action.ACTION_POWER_CONNECTED:
+        15a11b33 com.secomid.fota/com.msg.analytics.AnalyticsReceiver
+
+Key Set Manager:
+  [com.secomid.fota]
+      Signing KeySets: 41
+
+Packages:
+  Package [com.secomid.fota] (9ccd6ee):
+    userId=10115 gids=[3003, 1028, 1015, 3002, 3001]
+    pkg=Package{21c9b4ad com.secomid.fota}
+    codePath=/data/app/com.secomid.fota-1
+    resourcePath=/data/app/com.secomid.fota-1
+    legacyNativeLibraryDir=/data/app/com.secomid.fota-1/lib
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    versionCode=1 targetSdk=14
+    versionName=1.0
+    splits=[base]
+    applicationInfo=ApplicationInfo{3fc8378f com.secomid.fota}
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    pkgFlagsEx=[ ]
+    dataDir=/data/data/com.secomid.fota
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2010-01-01 10:11:13
+    firstInstallTime=2010-01-01 10:11:13
+    lastUpdateTime=2010-01-01 10:11:13
+    signatures=PackageSignatures{30c76a1c [34e4e625]}
+    permissionsFixed=true haveGids=true installStatus=1
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    User 0:  installed=true hidden=false stopped=false notLaunched=false enabled=0
+    grantedPermissions:
+      com.android.launcher3.permission.READ_SETTINGS
+      android.permission.RECEIVE_BOOT_COMPLETED
+      android.permission.BLUETOOTH
+      android.permission.GET_TASKS
+      android.permission.INTERNET
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.READ_PHONE_STATE
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.ACCESS_WIFI_STATE
